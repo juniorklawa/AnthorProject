@@ -1,0 +1,50 @@
+.movie-add{
+    max-width: 700px;
+    margin: 20px auto 0;
+    padding: 20px;
+    background: #FFF;
+    border-radius: 5px;
+    border: 1px solid #ddd
+}
+
+.movie-add h1{
+    font-size: 32px;
+}
+
+.movie-add p {
+    color: #666;
+    line-height: 24px;
+    margin-top: 5px
+}
+
+.movie-add a {
+    color: #069;
+}
+
+
+
+.movie-add input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.movie-add button {
+ width: 100%;
+  background-color: #F5C518;
+  color: #000;
+  font-weight: bold;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+    background-color: #d8ab17;
+  }
