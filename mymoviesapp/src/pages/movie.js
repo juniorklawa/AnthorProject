@@ -3,10 +3,10 @@ import { View, Text, FlatList, TouchableOpacity, StyleSheet } from 'react-native
 import api from '../services/api';
 
 
-export default class Main extends Component {
+export default class Movie extends Component {
 
     static navigationOptions = {
-        title: "My movies"
+        title: "Movie"
     };
 
     state = {
@@ -24,29 +24,15 @@ export default class Main extends Component {
         this.setState({ data })
     }
 
-    renderItem = ({ item }) => (
-        <View style={styles.movieContainer}>
-            <Text style={styles.movieTitle}>{item.title}</Text>
-            <Text style={styles.moviePlot}>{item.plot}</Text>
-            <TouchableOpacity style={styles.movieButton} onPress={() => {
-                this.props.navigation.navigate('Movie', {movie: item})
-            }}>
-                <Text style={styles.movieButtonText}>
-                    Excluir
-                </Text>
-            </TouchableOpacity>
 
-        </View>
-    )
 
 
     render() {
         return (
             <View style={styles.container}>
-                <FlatList keyExtractor={item => item._id}
-                    data={this.state.data}
-                    renderItem={this.renderItem}
-                    contentContainerStyle={styles.list} />
+               <Text>
+                   Movie
+               </Text>
             </View>
         )
     }
